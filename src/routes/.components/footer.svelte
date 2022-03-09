@@ -18,6 +18,15 @@
             <i class="fab fa-whatsapp" />
             087814507775
         </a>
+        <a
+            href="https://www.facebook.com/people/Putra-Packaging-Mgl/100073658131730/"
+            rel="exernal"
+            target="blank"
+            class="fb"
+        >
+            <i class="fab fa-facebook" />
+            Putra Packaging Magelang
+        </a>
     </div>
 </footer>
 
@@ -31,7 +40,13 @@
     iframe {
         @apply w-full h-60;
     }
-    .wa {
-        @apply p-2 bg-green-400 block rounded-full  font-bold text-center;
+    a {
+        @apply p-2  block rounded-full  font-bold text-center my-2;
+    }
+    a.wa {
+        @apply bg-green-400;
+    }
+    a.fb {
+        @apply bg-blue-500 text-white;
     }
 </style>
