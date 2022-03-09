@@ -1,14 +1,15 @@
 <script>
   import "../app.css";
+  import Footer from "./.components/footer.svelte";
+  import Header from "./.components/header.svelte";
 </script>
 
-<div class=" w-screen h-screen from-purple-400 to-orange-300 bg-gradient-to-br via-purple-500">
-  <slot />
+<div class=" w-screen h-screen ">
+  <Header />
+  <div
+    class=" overflow-y-scroll scrollbar-hide from-purple-400 to-orange-300 bg-gradient-to-br via-purple-500 h-screen pt-16"
+  >
+    <slot />
+    <Footer />
+  </div>
 </div>
-
-
-<style>
-  @tailwind base;
-  @tailwind utilities;
-  @tailwind components;
-</style>

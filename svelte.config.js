@@ -1,4 +1,4 @@
-import adapter from "@sveltejs/adapter-static";
+import adapter from "@sveltejs/adapter-auto";
 import preprocess from "svelte-preprocess";
 import {resolve} from 'path';
 
@@ -13,18 +13,13 @@ const config = {
   ],
 
   kit: {
-    adapter: adapter({
-      
-      pages:'build',
-      assets:'build',
-      precompress:false,
-      fallback:null
-    }),
+    adapter: adapter({}),
 
     vite:{
       resolve:{
         alias:{
-          '$assets':resolve('./src/assets')
+          '$assets':resolve('./src/assets'),
+          '$components':resolve('./src/components','./src/routes/.components')
         }
       }
     }
