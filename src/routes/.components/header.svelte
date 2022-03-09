@@ -9,6 +9,7 @@
     </flex-1>
     <flex-2>
         <a href="/">Home</a>
+        <a href="login">Login</a>
     </flex-2>
 </header>
 

@@ -19,7 +19,7 @@ const config = {
       resolve:{
         alias:{
           '$assets':resolve('./src/assets'),
-          '$components':resolve('./src/components','./src/routes/.components')
+          '$components':resolve('./src/routes/.components')
         }
       }
     }
